@@ -1,0 +1,224 @@
+
+@font-face {
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/patrickhand/v14/LDI1apSQOAYtSuYWp8ZhfYe8UcLLq7s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+p{
+  font-family: 'Patrick Hand';
+}
+.nav {
+  width: 100%;
+  background-color: brown;
+  position:fixed;
+  display:flex;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  text-decoration-color:white;
+}
+
+.nav a {
+
+  padding: 12px;
+  color: white;
+  font-size: 17px;
+  width: 30%;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+
+main {
+  padding-top: 40px;
+  }
+img{
+    width:100%;
+  }
+h1,h2,h3,h4{
+  text-align: center;
+}
+h1{
+    color:orange;
+    padding-top:5px;
+    font-family: 'Abhaya Libre', serif;
+}
+h2{
+  color: #00DDDD;
+}
+h3{
+  color:orange;
+}
+h4{
+  background-color: brown;
+  color: white;
+  padding: 10px;
+}
+.wrapper{
+  display: grid;
+    grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:auto auto auto 350px;
+  grid-template-areas:
+  ". h1 ."
+  "a1 a2 a3"
+  ". h2 ."
+  "i1 im1 im1"
+  ;}
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "h1 h1"
+    "h2 h2"
+      "row row"
+    "t ti"
+    ;
+
+}
+.textimg{
+  grid-area: ti;
+
+  margin:20px;
+  align-self: center;
+  justify-self: center;
+}
+.text{
+  grid-area: t;
+  padding:50px;
+  text-align: justify;
+  align-self: center;
+  justify-self: center;
+}
+.a1{
+  grid-area: a1;
+  text-align: center;
+}
+.a2{
+  grid-area: a2;
+  text-align: center;
+}
+.a3{
+  grid-area: a3;
+  text-align: center;
+}
+.h1{
+  grid-area: h1;
+  text-align: center;
+}
+.h2{
+  grid-area: h2;
+  text-align: center;
+}
+.i1{
+  grid-area: i1;
+  align-self: center;
+  justify-self: center;
+}
+
+.im1{
+  grid-area: im1;
+  height:350px;
+}
+.row{
+  display:flex;
+  grid-area:row;
+}
+.row>img{
+  width:20%;
+  height:190px;
+}
+#f{
+  display:flex;
+
+  color:white;
+  background-color: brown;
+}
+footer p{
+  padding:12px;
+  margin:17px;
+  width: 30%;
+  text-align: center;
+}
+.wrap{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "h1 h1 h1"
+  "h2 h2 h2"
+  "h31 h31 h31"
+  "food1 food2 food3"
+"h32 h32 h32"
+"food4 food5 food6"
+"h33 h33 h33"
+"food7 food8 .";
+}
+.h31{
+  grid-area: h31;
+}
+.h32{
+  grid-area: h32;
+}
+.h33{
+  grid-area: h33;
+}
+.food1{
+  grid-area: food1;
+}
+.food2{
+  grid-area: food2;
+}
+.food3{
+  grid-area: food3;
+}
+.food4{
+  grid-area: food4;
+}
+.food5{
+  grid-area: food5;
+}
+.food6{
+  grid-area: food6;
+}
+.food7{
+  grid-area: food7;
+}
+.food8{
+  grid-area: food8;
+}
+.wrap>article {
+  display: flex;
+  flex-flow: column; }
+
+.wrap>article > img {
+  order: -1;
+  align-self: center; }
+
+.wrap> article {
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+margin:2rem; }
+
+
+.wrap>article > p {
+  margin: 0.25em 1rem 1rem;
+  text-align: justify;
+}
+
+article > button {
+  margin-top: auto;
+  background: teal;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem; }
