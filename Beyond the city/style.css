@@ -1,0 +1,166 @@
+
+@font-face {
+  font-family: FirstFont;
+  src: url(coolvetica-rg.woff);
+}
+
+@font-face {
+  font-family: Second Font;
+  src: url(Louis-George-Cafe.woff);
+}
+
+h1,h2,h3,h5{
+font-family: FirstFont;
+}
+p{
+  font-family: Second Font;
+  font-size: 18px;
+}
+
+body{
+  color:white !important;
+  background: black !important;
+}
+.navbar-brand{
+color: lightgreen !important;
+}
+blockquote{
+    text-indent: -0.45em;
+   quotes: "“" "”" ;
+
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+h1{
+font-size: 36px;
+  text-align: center;
+  color: lightgreen;
+  margin-top: 70px !important;
+  margin-bottom: 50px !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.column {
+  flex: 33%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+  iframe{
+    width:100%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  iframe{
+    width:100%;
+    height:300px;
+  }
+
+}
+.grid{
+  display:grid;
+}
+.gr{
+  display:grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+@media screen and (max-width: 600px) {
+  .gr{
+    grid-template-columns: 1fr;
+  }
+
+}
+.round{
+  margin:50px;
+  border-radius: 50%;
+  width:100%;
+}
+.r{
+  margin:30px;
+  background-color: #141414;
+padding: 10px;
+}
+h2{
+  font-size:32px;
+  color: lightgreen !important;
+  text-decoration: underline;
+}
+a:link{
+  font-family: Second Font;
+  font-size: 18px;
+}
+
+
+h3{
+  font-size:29px;
+}
+h5{
+  font-size: 23px;
+}
+.footer{
+  text-align: center;
+}
+.card-body>h5{
+  color:lightgreen !important;
+
+}
+.a{
+  margin:10px;
+  padding: 20px;
+  text-align: justify;
+}
+.card-body>  a:link{
+  text-decoration: none;
+  color:lightgreen;
+}
+.card-body>  a:hover{
+  text-decoration: underline;
+  text-decoration-color: lightgreen;
+  color:lightgreen;
+
+}
+a:hover{
+  font-family: Second Font;
+  font-size: 18px;
+}
+.card-body>main a:visited{
+    text-decoration: none;
+    color: blue;
+}
+.card-body>main a:active{
+  color:green;
+}
+.column a:link{
+text-decoration: none;
+color:white;
+}
+.column a:visited{
+text-decoration: none;
+color:white;
+}
+
+.column a:hover{
+  text-decoration-color: white;
+  text-decoration: underline;
+  color: white;
+}
