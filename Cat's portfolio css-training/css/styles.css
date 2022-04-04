@@ -41,12 +41,7 @@ h2 {
   margin-bottom: 0;
 }
 
-.item-details h3 + p {
-  font-style: italic;
-}
-.item-details h3 ~ p {
-  margin: 0;
-}
+
 .divider > section {
   overflow: hidden;
   border-bottom: 1px dashed #343434;
